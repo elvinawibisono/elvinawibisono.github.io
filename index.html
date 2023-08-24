@@ -37,16 +37,14 @@
                 margin: 0 auto; /* To center the image horizontally */
             }
 
-            /* Center content within the contact section using flexbox */
-            @media (max-width: 768px) {
-            .page-section.custom-bg-color {
-                display: flex;
-                flex-direction: column; /* Stack content vertically */
-                justify-content: center; /* Center vertically */
-                align-items: center; /* Center horizontally */
-                text-align: center; /* Center text within the container */
-                }
+            .section-home-image {
+                max-width: 375px; /* Adjust the maximum width as needed */
+                height: auto;
+                display: block; /* To center the image horizontally */
+                margin: 0 auto; /* To center the image horizontally */
             }
+
+           
 
 
          
@@ -80,7 +78,7 @@
         <header class="masthead custom-bg-color text-blue text-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
-                <img class="hello-logo mb-5" src="assets/img/hello.png" width= "50%" height= "50%" alt="..." />
+                <img class="section-home-image img-fluid" src="assets/img/hello.png" alt="Hello" />
                 <!-- Masthead Heading-->
                 <h1 class="masthead-heading text-uppercase mb-0">Welcome to my Website!</h1>
                 <!-- Icon Divider-->
