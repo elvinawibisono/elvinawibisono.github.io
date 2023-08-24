@@ -20,6 +20,8 @@
             .custom-bg-color {
                 background-color: #fffbf6;
                 background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
             }
 
             .navbar-logo {
@@ -33,6 +35,17 @@
                 height: auto;
                 display: block; /* To center the image horizontally */
                 margin: 0 auto; /* To center the image horizontally */
+            }
+
+            /* Center content within the contact section using flexbox */
+            @media (max-width: 768px) {
+            .page-section.custom-bg-color {
+                display: flex;
+                flex-direction: column; /* Stack content vertically */
+                justify-content: center; /* Center vertically */
+                align-items: center; /* Center horizontally */
+                text-align: center; /* Center text within the container */
+                }
             }
 
 
