@@ -44,17 +44,29 @@
                 margin: 0 auto; /* To center the image horizontally */
             }
 
-           
+            @font-face {
+                font-family: 'Alviena';
+                src: url('assets/fonts/Alviena.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
 
+            @font-face {
+                font-family: 'JustBreathe';
+                src: url('aassets/fonts/JustBreathe-vO6y.otf') format('opentype');
+                font-weight: normal;
+                font-style: normal;
+            }
 
-         
+            /* Apply the custom font to navigation menu */
+            #mainNav .navbar-nav .nav-link {
+                font-family: 'Alviena', sans-serif; /* Use the custom font followed by fallbacks */
+                font-size: 32px;
+            }
+  
         </style>
         
     </head>
-    
-
-    
-
 
     <body id="page-top";>
         <!-- Navigation-->
@@ -67,7 +79,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 text-blue rounded" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 text-blue rounded" href="#portfolio">Projects</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 text-blue rounded" href="#about">About</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 text-blue rounded" href="#contact">Contact</a></li>
                     </ul>
