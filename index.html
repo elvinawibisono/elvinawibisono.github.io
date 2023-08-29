@@ -38,7 +38,7 @@
             }
 
             .section-home-image {
-                max-width: 275px; /* Adjust the maximum width as needed */
+                max-width: 350px; /* Adjust the maximum width as needed */
                 height: auto;
                 display: block; /* To center the image horizontally */
                 margin: 0 auto; /* To center the image horizontally */
@@ -65,6 +65,13 @@
                 font-style: normal;
             }
 
+            @font-face {
+                font-family: 'Canela-Light';
+                src: url('assets/fonts/Canela-Light-Trial.otf') format('opentype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
             /* Apply the custom font to navigation menu */
             #mainNav .navbar-nav .nav-link {
                 font-family: 'Alviena', sans-serif; /* Use the custom font followed by fallbacks */
@@ -72,12 +79,15 @@
             }
 
             .header-custom-font {
-                font-family: 'Canela-Thin', sans-serif; /* Use the custom font followed by fallbacks */
+                font-family: 'Canela-Light', sans-serif; /* Use the custom font followed by fallbacks */
+                
             }
 
             header.masthead.custom-bg-color.text-blue.text-center {
-                font-family: 'Canela-Thin', sans-serif; /* Use the custom font followed by fallbacks */
+                font-family: 'Canela-Light', sans-serif; /* Use the custom font followed by fallbacks */
+                
             }
+
   
         </style>
         
@@ -105,21 +115,24 @@
         <header class="masthead custom-bg-color text-blue text-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
-                <img class="section-home-image img-fluid" src="assets/img/hello.png" alt="Hello" />
+                <img class="section-home-image img-fluid" src="assets/img/helloworldcrop.png" alt="Hello" />
                 <!-- Masthead Heading-->
-                <h1 class="masthead-heading mb-0 header-custom-font">Welcome to my Website!</h1>
+                <!--<h1 class="masthead-heading mb-0 header-custom-font">Welcome to my Website!</h1>-->
                 <!-- Icon Divider-->
-                <div class="divider-custom">
+               <!---- <div class="divider-custom">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
-                </div>
+                </div> -->
+            
+                <br>
                 <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">It is nice to "meet" you! :)</p>
-                <p class="masthead-subheading font-weight-light mb-0">My name is Elvina. Senior at Barnard College of Columbia University.</p>
-                <p class="masthead-subheading font-weight-light mb-0">Majoring in Computer Science. Loves cooking and watching Cat Videos</p>
-                <p class="masthead-subheading font-weight-light mb-0">Hates baking cakes and wet socks.</p>
-                <p class="masthead-subheading font-weight-light mb-0">Interests in AI, Computer Vision, and Cats</p>
+                <p class="masthead-subheading font-weight-light mb-0">Welcome! My name is Elvina. Senior at Barnard College of</p>
+                <p class="masthead-subheading font-weight-light mb-0"> Columbia University. Majoring in Computer Science. Loves</p>
+                <p class="masthead-subheading font-weight-light mb-0"> cooking and watching Cat Videos. Hates baking cakes </p>
+                <p class="masthead-subheading font-weight-light mb-0">and wet socks. Interests in AI, Computer Vision, and Cats</p>
+                <p class="masthead-subheading font-weight-light mb-0"></p>
+               <br>
                 <p class="masthead-subheading font-weight-light mb-0">About : Please go here if you want to know more about me. </p>
                 <p class="masthead-subheading font-weight-light mb-0">Projects : Please go to this page to learn about some of my works in research and personal projects.  </p>
                 <p class="masthead-subheading font-weight-light mb-0">Contact : List of where you can reach out to me.  </p>
