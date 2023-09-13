@@ -113,6 +113,14 @@
   font-style: normal;
 }
 
+@font-face{
+  font-family: 'MaisonMono';
+  src: url('assets/fonts/MaisonNeueMono-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 
 
 
