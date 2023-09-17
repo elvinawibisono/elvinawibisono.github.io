@@ -129,14 +129,50 @@
         <header class="masthead custom-bg-color text-blue text-center">
             <div class="container d-flex align-items-center flex-column">
 
-                <h1 style="font-size: 60px;"> HELLO .... </h1>
-                <br>
-                <h2 style="font-size: 36px;"> If your name is Deborah, please press the BUTTON.</h2>
-                <br>
-                <a href="part1.html"><img src = "assets/img/button pink.png" alt="Button" class="navbar-logo img-fluid"/></a>
-                
+                <img src="https://media0.giphy.com/media/QuTOdlwvMl5lHKbpRC/200w.gif?cid=6c09b952ta9ln2uiil7ij1e5tkw7o60upbm1pi81tn4i4rj8&ep=v1_gifs_search&rid=200w.gif&ct=g" alt="GIF2" width="600" height="400">
+                <h1>For your 22nd birthday, I hid 3 gifts in your apartment. After each mission you will be granted a hint where to find them.</h1>
+                <h1>OK baddie, lets start on your first mission/level: </h1>
 
-             
+                <form id="quiz-form" onsubmit="checkAnswer(); return false;">
+                    <h2>How tf did we meet?(MORE SPECIFIC)</h2>
+                    <label>
+                        <input type="radio" name="answer" value="Barnard"> Barnard
+                    </label><br>
+                    <label>
+                        <input type="radio" name="answer" value="Transfer"> Transfer group
+                    </label><br>
+                    <label>
+                        <input type="radio" name="answer" value="ig"> Instagram DM
+                    </label><br>
+                    <label>
+                        <input type="radio" name="answer" value="breakout"> Breakout Room 
+                    </label><br>
+                    <input type="submit" value="Submit">
+                </form>
+            
+                <p id="result"></p>
+                <script>
+                    function checkAnswer() {
+                        // Get the selected option
+                        const selectedOption = document.querySelector('input[name="answer"]:checked');
+            
+                        // Check if an option is selected
+                        if (selectedOption) {
+                            const userAnswer = selectedOption.value;
+                            
+                            // Check if the user's answer is correct
+                            if (userAnswer === "breakout") {
+                                document.getElementById("result").innerHTML = "OK TRUE FRIEND! Hint: where did you make your viral tiktok video that got you an interview at LA Times?";
+                            } else {
+                                document.getElementById("result").innerHTML = "BITCH SIGH";
+                            }
+                        } else {
+                            document.getElementById("result").innerHTML = "Please select an answer.";
+                        }
+                    }
+                </script>
+                
+              
             </div>
         </header>
        
@@ -145,7 +181,8 @@
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+        <script src="js/scripts.js"></script> 
+        
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
