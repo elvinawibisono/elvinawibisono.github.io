@@ -11022,7 +11022,7 @@ html {
 }
 
 @media (max-width: 768px) {
-  .masthead-subheading {
+  .masthead .masthead-subheading {
     font-size: 1.5rem; /* Adjust the font size for smaller screens */
     line-height: 1.5rem; /* Adjust the line height accordingly */
   }
