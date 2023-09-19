@@ -11026,6 +11026,10 @@ html {
     font-size: 1.5rem; /* Adjust the font size for smaller screens */
     line-height: 1.5rem; /* Adjust the line height accordingly */
   }
+  .masthead {
+    padding-top: calc(4rem + 74px); /* Decrease the top padding for smaller screens */
+    padding-bottom: 4rem; /* Decrease the bottom padding for smaller screens */
+  }
 }
 
 .masthead .masthead-avatar {
