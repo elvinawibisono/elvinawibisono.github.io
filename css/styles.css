@@ -11031,6 +11031,7 @@ html {
 
 .masthead .masthead-avatar {
   width: 15rem;
+  height: auto; 
 }
 
 @media (min-width: 992px) {
