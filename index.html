@@ -98,14 +98,17 @@
             .home-container {
                 text-align: center; /* Center-align the content within the container */
                 margin: 0 auto; /* Center the container horizontally on the page */
-                max-width: 700px; /* Set a maximum width for the container if desired */
+                max-width: 800px; /* Set a maximum width for the container if desired */
             }
 
-            ul{
+            ul.bullet-list{
                 /* margin: 0 0 0 32px;
                 line-height: 1.5; */
                 text-align: left;
-                padding-left: 0; 
+                padding: 0; 
+                margin : 0; 
+                list-style:none;
+                position: relative;
             }
 
             .b1 {
@@ -114,13 +117,45 @@
 
             .b2 {
                 list-style-image: url(assets/img/heartbullet.png);
+                vertical-align: middle;
+                margin-right: 10px; /* Add spacing between the image and text */
+                width: 64px; 
+                height: 63px;   
+                
+                /* margin-right: 10px;  */
                 /* width : 32px; 
                 height: 32px; */
             }
-
-            ul li {
-                font-size: 19px; /* Adjust the font size as needed */
+            ul.bullet-list li {
+                font-size: 19px;
+                margin: 0;
+                padding: 0 0 0 80px; /* Add left padding for the text to create space for the image */
+                line-height: 64px; /* Adjust line-height for proper spacing between text */
+                background: url(assets/img/heartbullet.png) no-repeat left top; /* Set the background image */
+                background-size: 64px 63px; /* Set the background image dimensions */
             }
+
+            ul.bullet-list li.multi-line{
+                line-height: 3;
+
+            }
+/* 
+            ul li {
+                font-size: 19px; 
+                line-height: 1.5;
+                margin: 0; 
+                padding: 0; 
+                display: flex;
+                align-items: center;
+                /* padding-left:64px;
+                min-height:63px; */
+
+                /* list-style-position: inside; 
+                line-height: 80px; */
+                /* list-style-position: inside;  */
+                /* display: flex;
+                align-items: center; 
+            } */
 
            
             
@@ -173,12 +208,12 @@
                 <div class = 'home-container'>
 
                     <p class="masthead-subheading font-weight-light mb-0" align ="center">My name is Elvina!</p>
-                    <ul align = "left">
-                        <li class = "b2">Senior at <a href = "https://barnard.edu">Barnard College of Columbia University</a>.</li>
-                        <li class = "b2">Majoring in <a href =" https://cs.barnard.edu">Computer Science</a>(Intelligent Systems Track) & <a href ="https://cogsci.barnard.edu">Cognitive Science</a> (Human-Computer Interaction specialization) </li>
-                        <li class = "b2">Loves Cooking and Watching Cat Videos.</li>
-                        <li class = "b2">Hates baking cakes and wet socks.</li>
-                        <li class = "b2">Interests in AI, Computer Vision, and Cats.</l1>
+                    <ul class = 'bullet-list'>
+                        <li >Senior at <a href = "https://barnard.edu">Barnard College of Columbia University</a>.</li>
+                        <li class = "multi-line" >Majoring in <a href =" https://cs.barnard.edu">Computer Science</a> & <a href ="https://cogsci.barnard.edu">Cognitive Science</a>. </li>
+                        <li >Loves Cooking and Watching Cat Videos.</li>
+                        <li >Hates baking cakes and wet socks.</li>
+                        <li >Interests in AI, Computer Vision, and Cats.</l1>
                     </ul>
 
                 </div>
