@@ -181,15 +181,27 @@
             @media (max-width: 768px) {
                 /* Adjust styles for mobile devices */
                 .home-container {
-                    text-align: center;
+                    flex-direction: column; /* Stack the columns on top of each other for mobile */
                 }
 
                 .left-column {
-                    order: 2; /* Reorder the left column to appear below the right column */
+                    order: 2; /* Reorder the left column to appear below the right column for mobile */
                 }
 
                 .right-column {
-                    order: 1; /* Reorder the right column to appear above the left column */
+                    order: 1; /* Reorder the right column to appear above the left column for mobile */
+                }
+
+                ul.bullet-list {
+                    font-size: 16px; /* Adjust the font size for bullet points on mobile */
+                }
+
+                ul.bullet-list li {
+                    line-height: 1.5; /* Adjust line height for proper spacing between bullet points on mobile */
+                }
+
+                .left-column img {
+                    max-width: 100%; /* Make the image responsive on mobile */
                 }
             }
 
