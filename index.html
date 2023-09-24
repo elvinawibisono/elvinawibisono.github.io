@@ -115,6 +115,9 @@
                 text-align: center; /* Center-align the content within the container */
                 margin: 0 auto; /* Center the container horizontally on the page */
                 max-width: 980px; /* Set a maximum width for the container if desired */
+                display: flex; /* Use flexbox to place items side by side */
+                justify-content: center; /* Center the content horizontally */
+                align-items: center; /* Center the content vertically */
             }
 
             ul.bullet-list{
@@ -174,10 +177,20 @@
                 /* margin-right: 20px; */
             }
 
-            .home-container {
-                display: flex; /* Use flexbox to place items side by side */
-                justify-content: center; /* Center the content horizontally */
-                align-items: center; /* Center the content vertically */
+
+            @media (max-width: 768px) {
+                /* Adjust styles for mobile devices */
+                .home-container {
+                    text-align: center;
+                }
+
+                .left-column {
+                    order: 2; /* Reorder the left column to appear below the right column */
+                }
+
+                .right-column {
+                    order: 1; /* Reorder the right column to appear above the left column */
+                }
             }
 
            
