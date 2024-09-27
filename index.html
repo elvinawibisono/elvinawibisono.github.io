@@ -15,202 +15,7 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-
-        <style>
-            .custom-bg-color {
-                background-color: #fffbf6;
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-            }
-
-            .navbar-logo {
-                max-width: 180px; /* Adjust the maximum width as needed */
-                height: auto;
-                display: block; /* To center the image horizontally */
-            }
-
-            .section-heading-image {
-                max-width: 350px; /* Adjust the maximum width as needed */
-                height: auto;
-                display: block; /* To center the image horizontally */
-                margin: 0 auto; /* To center the image horizontally */
-            }
-
-            .section-home-image {
-                max-width: 350px; /* Adjust the maximum width as needed */
-                height: auto;
-                display: block; /* To center the image horizontally */
-                margin: 0 auto; /* To center the image horizontally */
-            }
-
-            @font-face {
-                font-family: 'Alviena';
-                src: url('assets/fonts/Alviena.ttf') format('truetype');
-                font-weight: normal;
-                font-style: normal;
-            }
-
-            @font-face {
-                font-family: 'JustBreathe';
-                src: url('aassets/fonts/JustBreathe-vO6y.otf') format('opentype');
-                font-weight: normal;
-                font-style: normal;
-            }
-
-            @font-face {
-                font-family: 'Canela-Thin';
-                src: url('assets/fonts/CanelaDeck-Thin-Trial.otf') format('opentype');
-                font-weight: normal;
-                font-style: normal;
-            }
-
-            @font-face {
-                font-family: 'Canela-Light';
-                src: url('assets/fonts/Canela-Light-Trial.otf') format('opentype');
-                font-weight: normal;
-                font-style: normal;
-            }
-
-            @font-face{
-                font-family: 'MaisonMono';
-                src: url('assets/fonts/MaisonNeueMono-Regular.otf') format('opentype');
-                font-weight: normal;
-                font-style: normal;
-
-            }
-
-            @font-face{
-                font-family: 'MaisonNeue';
-                src: url('assets/fonts/MaisonNeue-Demi.otf') format('opentype');
-                font-weight: normal;
-                font-style: normal;
-
-            }
-
-            @font-face{
-                font-family: 'LarishNeue';
-                src: url('assets/fonts/LarishNeueSemiboldRegular.otf') format('opentype');
-                font-weight: normal;
-                font-style: normal;
-
-            }
-
-            /* Apply the custom font to navigation menu */
-            #mainNav .navbar-nav .nav-link {
-                font-family: 'Alviena', sans-serif; /* Use the custom font followed by fallbacks */
-                font-size: 32px;
-            }
-
-            .header-custom-font {
-                font-family: 'MaisonMono', sans-serif; /* Use the custom font followed by fallbacks */
-                
-            }
-
-            header.masthead.custom-bg-color.text-blue.text-center {
-                font-family: 'MaisonMono', sans-serif; /* Use the custom font followed by fallbacks */
-                
-            }
-            .home-container {
-                text-align: center; /* Center-align the content within the container */
-                margin: 0 auto; /* Center the container horizontally on the page */
-                max-width: 980px; /* Set a maximum width for the container if desired */
-                display: flex; /* Use flexbox to place items side by side */
-                justify-content: center; /* Center the content horizontally */
-                align-items: center; /* Center the content vertically */
-            }
-
-            ul.bullet-list{
-                /* margin: 0 0 0 32px;
-                line-height: 1.5; */
-                text-align: left;
-                padding: 0; 
-                margin : 0; 
-                list-style:none;
-                position: relative;
-            }
-
-            .b1 {
-                list-style-image: url(assets/img/bulletstar.png);
-            }
-
-            .b2 {
-                list-style-image: url(assets/img/heartbullet.png);
-                vertical-align: middle;
-                margin-right: 10px; /* Add spacing between the image and text */
-                width: 64px; 
-                height: 63px;   
-                
-                /* margin-right: 10px;  */
-                /* width : 32px; 
-                height: 32px; */
-            }
-            ul.bullet-list li {
-                font-size: 15px;
-                margin: 0;
-                padding: 0 0 0 80px; /* Add left padding for the text to create space for the image */
-                line-height: 64px; /* Adjust line-height for proper spacing between text */
-                background: url(assets/img/heartbullet.png) no-repeat left top; /* Set the background image */
-                background-size: 64px 63px; /* Set the background image dimensions */
-            }
-
-            ul.bullet-list li.multi-line{
-                line-height: 3;
-
-            }
-
-            .left-column {
-                flex: 2;
-                text-align: center;
-                padding: 10px;
-            }
-           
-
-            .left-column img {
-                max-width: 115%;
-                height: auto;
-            }
-
-            .right-column {
-                flex: 3;
-                padding: 10px; /* Add some padding for spacing */
-                /* margin-right: 20px; */
-            }
-
-
-            @media (max-width: 768px) {
-                /* Adjust styles for mobile devices */
-                .home-container {
-                    flex-direction: column; /* Stack the columns on top of each other for mobile */
-                }
-
-                .left-column {
-                    order: 1; /* Reorder the left column to appear below the right column for mobile */
-                }
-
-                .right-column {
-                    order: 2; /* Reorder the right column to appear above the left column for mobile */
-                }
-
-                ul.bullet-list {
-                    font-size: 16px; /* Adjust the font size for bullet points on mobile */
-                }
-
-                ul.bullet-list li {
-                    line-height: 1.5; /* Adjust line height for proper spacing between bullet points on mobile */
-                }
-
-                .left-column img {
-                    max-width: 100%; /* Make the image responsive on mobile */
-                }
-            }
-
-            
-  
-
-  
-        </style>
-        
+        <link href="css/main.css" rel="stylesheet" />
     </head>
 
     <body id="page-top";>
@@ -231,80 +36,71 @@
                 </div>
             </div>
         </nav>
+
+        
         <!-- Masthead-->
         <header class="masthead custom-bg-color text-blue text-center">
-            <div class="container d-flex align-items-center flex-column">
+            <div class="container d-flex flex-column">
                 <!-- Masthead Avatar Image-->
-                <br>
-                <img class="section-home-image img-fluid" src="assets/img/helloworldcrop.png" alt="Hello" />
-
-                
-                <!--<h1 class="masthead-heading mb-0 header-custom-font">Welcome to my Website!</h1>-->
-                <!-- Icon Divider-->
-               <!---- <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
+                <!-- <br> -->
+                <!-- <div class = "row mt-0 mb-5"> 
+                    <img class="section-home-image img-fluid" src="assets/img/helloworldcrop.png" alt="Hello" />
                 </div> -->
-            
-                <br>
-                <!-- Masthead Subheading-->
-                <!-- <p class="masthead-subheading font-weight-light mb-0">Welcome! My name is Elvina. Senior at Barnard College of</p>
-                <p class="masthead-subheading font-weight-light mb-0"> Columbia University. Majoring in Computer Science. Loves</p>
-                <p class="masthead-subheading font-weight-light mb-0"> cooking and watching Cat Videos. Hates baking cakes </p>
-                <p class="masthead-subheading font-weight-light mb-0">and wet socks. Interests in AI, Computer Vision, and Cats</p>
-                <p class="masthead-subheading font-weight-light mb-0"></p> -->
-                <div class = 'home-container'>
-                    <div class = "left-column">
-                        <img src = "assets/img/myimage.PNG" alt = "my image" class ="img-fluid" >
+
+                <div class ="row mb-5 "> 
+                    <div class= "left-column"> 
+                        <img src = "assets/img/mypic.JPG" alt = "my image" class ="img-fluid"  style= "height: 500px ; width: 350px; object-fit: cover;" >
+                        <div class="text-and-button"> 
+                            <p>📍 <i>Currently Based in NYC.</i></p>
+                            <p>🍀 <i>Seeking a full-time SWE role</i></p>
+                            <a href = "assets/files/ELVINA_WIBISONO_RESUME__SEPT2023-NEW.pdf"><button class ="button-74" href = "assets/files/ELVINA_WIBISONO_RESUME__SEPT2023-NEW.pdf">🖇️ Resume</button></a>
+                            <a href = "#contact"><button class ="button-74" href = "#contact">📞 Contact</button></a>
+                        </div>
+
                     </div>
-
-                    <div class = "right-column">
-                        <p class="masthead-subheading font-weight-light mb-0" align ="center" style="font-family: 'LarishNeue', sans-serif;">My name is Elvina!</p>
-                        <ul class = 'bullet-list'>
-                            <li >Senior at <a href = "https://barnard.edu">Barnard College of Columbia University</a>.</li>
-                            <li >Majoring in <a href =" https://cs.barnard.edu">Computer Science</a> & <a href ="https://cogsci.barnard.edu">Cognitive Science</a>. </li>
-                            <li >Loves Cooking and Watching Cat Videos.</li>
-                            <li >Hates baking cakes and wet socks.</li>
-                            <li >Interests in AI, Computer Vision, and Cats.</l1>
-                        </ul>
+                    <div class = "right-column"> 
+                         <!-- <h1 class="masthead-subheading font-weight-light mb-0" style="font-family: 'LarishNeue', sans-serif; font-size: 30px; text-align: flex-start; align-items: flex-start;">
+                                Elvina Wibisono 
+                            </h1>  -->
+                        <div class="header-container">
+                            <img class="hello-world-gif img-fluid" src="assets/img/helloworldcrop.png" alt="Hello" />
+                        </div>
+                                 
+                        <div class="pt-3" style="font-size: 13pt; text-align: left;">
+                            <p> <span style= "font-weight: bold;">Hi! I'm Elvina Wibisono,</span>  a recent graduate from 
+                                <a href = "https://barnard.edu" class="link-text"><img src="assets/img/barnard-logo.png" class="emoji-size">\<img src="assets/img/columbia-logo.png" class="emoji-size"> Barnard College of Columbia University ('24)</a>, 
+                                where I double majored in  <a href =" https://cs.barnard.edu" class="link-text">💻 Computer Science</a> and <a href ="https://cogsci.barnard.edu" class="link-text">🧠 Cognitive Science</a>. 
+                            </p>
+                            <br>
+                            <p>
+                                I’m passionate about AI/ML, accessibility, and Human-Computer Interaction, and I specialize in developing compact computer vision models for real-world applications. 
+                                
+                            </p> 
+                            <br>
+                            <p>
+                                Currently, I’m researching efficient real-time object detection using TinyML techniques for tiny drones under  <a href = "https://a2r-lab.org/" class="link-text"><img src="assets/img/barnard-logo.png" class="emoji-size"> Barnard A2R Lab</a>, and 
+                                I’m <i>actively seeking a full-time Software Engineering role</i> where I can apply my skills to innovative projects. 
+                            </p>
+                            <br>
+                            <p>
+                                When I’m not coding, I’m usually experimenting with new recipes in the 🍳 kitchen or enjoying some 🐱 cat videos!
+                            </p>
+                            <a href="#about">Learn More about Me  ➡</a>
+                        </div>
                     </div>
-
-                  
-                </div>
-
-                <h5 align = "left">To learn more about me, teleport <a href = "#about">here</a>. Curious about my experience and projects, please go <a href="#portfolio">here</a>.</h6>
-                <h5 align = "left"> Any questions? Find the best way to Contact me <a href = "#contact">here</a>! </h6>
-                <h5 align = "left"> Want to see my information in a single page? Click the Resume button below!</h5>
-                <a href = "assets/files/ELVINA_WIBISONO_RESUME__SEPT2023-NEW.pdf"><button class ="button-74" href = "assets/files/ELVINA_WIBISONO_RESUME__SEPT2023-NEW.pdf">Resume</button></a>
-
-
-
-                
-                
-                
-                <!-- <p class="masthead-subheading font-weight-light mb-0" align ="center">Senior at <a href = "https://barnard.edu">Barnard College of Columbia University</a>. </p>
-                <p class="masthead-subheading font-weight-light mb-0" align ="center">Majoring in <a href =" https://cs.barnard.edu">Computer Science</a>(Intelligent Systems Track) and </p>
-                <p class="masthead-subheading font-weight-light mb-0" align ="center"> <a href ="https://cogsci.barnard.edu">Cognitive Science</a> (Human-Computer Interaction specialization).</p>
-                <p class="masthead-subheading font-weight-light mb-0" align ="center">Loves Cooking and Watching Cat Videos. Hates baking cakes and wet socks. Interests in AI, Computer Vision, and Cats.</p>
-                <p class="masthead-subheading font-weight-light mb-0" align ="center"></p>
-                <br> -->
-                <!-- <p class="masthead-subheading font-weight-light mb-0">About : Please go here if you want to know more about me. </p>
-                <p class="masthead-subheading font-weight-light mb-0">Projects : Please go to this page to learn about some of my works in research and personal projects.  </p>
-                <p class="masthead-subheading font-weight-light mb-0">Contact : List of where you can reach out to me.  </p> -->
+                </div> 
+        
             </div>
         </header>
         <!-- Portfolio Section-->
         <section class="page-section portfolio custom-bg-color" id="portfolio">
             <div class="container">
                 <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0"><img src = "assets/img/projects_cropped.png" alt="Portfolio" class="section-heading-image img-fluid" /></h2>
-                <!-- Icon Divider-->
-                <!-- <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div> -->
+                <div class = "row mt-0 mb-5"> 
+                    <img class="section-home-image img-fluid" src = "assets/img/projects_cropped.png" alt="Portfolio"  />
+                </div>
+                
+                <!-- <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0"><img src = "assets/img/projects_cropped.png" alt="Portfolio" class="section-heading-image img-fluid" /></h2> -->
                 <!-- Portfolio Grid Items-->
                 <br>
                 <div class="row justify-content-center">
@@ -372,7 +168,10 @@
         <section class="page-section custom-bg-color text-blue mb-0" id="about">
             <div class="container">
                 <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-blue"><img src = "assets/img/aboutme.png" alt="About" class="section-heading-image img-fluid"/></h2>
+                <div class = "row mt-0 mb-5"> 
+                    <img class="section-home-image img-fluid" src = "assets/img/aboutme.png" alt="About" />
+                </div>
+                <!-- <h2 class="page-section-heading text-center text-uppercase text-blue"><img src = "assets/img/aboutme.png" alt="About" class="section-heading-image img-fluid"/></h2> -->
                 <!-- Icon Divider-->
                 <!-- <div class="divider-custom">
                     <div class="divider-custom-line"></div>
@@ -394,7 +193,10 @@
         <section class="page-section custom-bg-color" id="contact">
             <div class="container">
                 <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0"><img src = "assets/img/contactme_crop.png" alt="Contact" class="section-heading-image img-fluid"/></h2>
+                <div class = "row mt-0 mb-5"> 
+                    <img class="section-home-image img-fluid" src = "assets/img/contactme_crop.png" alt="Contact" />
+                </div>
+                <!-- <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0"><img src = "assets/img/contactme_crop.png" alt="Contact" class="section-heading-image img-fluid"/></h2> -->
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
