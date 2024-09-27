@@ -353,4 +353,36 @@ header.masthead.custom-bg-color.text-blue.text-center {
     transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
 
+/* Mobile-friendly adjustments */
+@media (max-width: 768px) {
+    .left-column, .right-column {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%; /* Make sure the columns take the full width */
+    }
+
+    .left-column img {
+        width: 80%; /* Scale down the image for mobile */
+        height: auto; /* Maintain the aspect ratio */
+    }
+
+    .text-and-button {
+        margin-top: 15px; /* Add space between the image and buttons */
+    }
+
+    .text-and-button p, .text-and-button button {
+        font-size: 12pt; /* Slightly reduce the text and button size */
+    }
+
+    .right-column {
+        padding: 20px; /* Add padding for better mobile readability */
+    }
+
+    .hello-world-gif {
+        width: 100px; /* Adjust the GIF size */
+        margin-bottom: 20px; /* Add spacing for mobile */
+    }
+}
+
 
