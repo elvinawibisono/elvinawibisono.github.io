@@ -167,14 +167,88 @@
         </section>
         <!-- About Section-->
         <section class="page-section custom-bg-color text-blue mb-0" id="about">
-            <div class="container" style="font-family: 'MaisonMono', sans-serif;">
+            <div class="container">
                 <!-- About Section Heading-->
                 <div class = "row mt-0 mb-5"> 
                     <img class="section-home-image img-fluid" src = "assets/img/aboutme.png" alt="About" />
                 </div>
                 <!-- About Section Content-->
+                 <!-- Info Bar -->
+                <div class="content-wrapper">
+                    <div class="info-bar">
+                        <p>Select a topic from the column on the left to learn more about me!</p>
+                    </div>
+                    <div class="content-container">
+                        <!-- Buttons Column -->
+                        <div class="buttons-column">
+                          <button onclick="showContent('who')">Who I Am</button>
+                          <button onclick="showContent('what')">What I Do</button>
+                          <button onclick="showContent('where')">Where I'm From</button>
+                          <button onclick="showContent('hobbies')">Hobbies & Interests</button>
+                        </div>
+                    
+                        <!-- Content Column -->
+                        <div class="content-column">
+                          <div id="who" class="content-about active">
+                            <h2>Who I Am</h2>
+                            <p>Hi! I'm Elvina Wibisono, a passionate Software Engineer specializing in AI/ML and HCI.</p>
+                          </div>
+                          <div id="what" class="content-about">
+                            <h2>What I Do</h2>
+                            <p>I develop compact computer vision models using TinyML and work on real-world robotics projects.</p>
+                          </div>
+                          <div id="where" class="content-about">
+                            <h2>Where I'm From</h2>
+                            <p>I'm from Manado, Indonesia, famous for its diving spots and the rare Sulawesi Coelacanth!</p>
+                          </div>
+                          <div id="hobbies" class="content-about">
+                            <h2>Hobbies & Interests</h2>
+                            <p>I love reading, cooking, and curating NYC maps of cafes and working cats (e.g., bodega cats).</p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
                 
-                <div>
+
+               
+                
+                <!-- <div class="dialog-container">
+                 
+                    <div class="dialog-box">
+                      <div class="dialog-header" >
+                        <img src="assets/img/avatar.jpg" alt="Avatar" class="avatar">
+                        <span class="name">Elvina</span>
+                      </div>
+                      
+                      <div class="dialog-content-wrapper">
+                        <div class="dialog-content" id="dialog-content">
+                          Hi! I'm Elvina Wibisono, a software engineer passionate about AI/ML, accessibility, and HCI.
+                        </div>
+                      </div>
+                      <div class="dialog-buttons">
+                        <button id="next-button" class="dialog-button">Next</button>
+                        <button id="show-all-button" class="dialog-button">Show All</button>
+                      </div>
+                    </div>
+                  
+                    
+                    <div class="skills-section">
+                      <button class="collapsible">👾 Technical Skills</button>
+                      <div class="content">
+                        <p>
+                          <strong>Programming Languages:</strong> Java, Python, C/C++, JavaScript, HTML5/CSS, SQL, MatLab, R, SPSS <br>
+                          <strong>Libraries/Frameworks:</strong> Numpy, Matplotlib, ggplot2, Flask, Node.js, jQuery, TensorFlow, OpenCV <br>
+                          <strong>Databases:</strong> PostgreSQL, MySQL, NoSQL, Neo4j <br>
+                          <strong>Other Tools:</strong> Git/Github, Unix/Linux, Google Cloud Platforms (GCP), Embedded Systems (Raspberry Pis & Arduino), Docker, Figma, LaTex
+                        </p>
+                      </div>
+                    </div>
+                  </div> -->
+                  
+                  
+    
+                
+                <!-- <div>
                     <p>Hi there! I'm Elvina Wibisono, a Software Engineer passionate about AI/ML, accessibility, and Human-Computer Interaction(HCI).
                         I recently just graduated from Barnard College of Columbia University (May 2024) with a double major in Computer Science and Cognitive Science. 
                     </p>
@@ -198,17 +272,16 @@
                         I also enjoy making my google list at google maps of things in NYC from cafes to work at until restaurants, I am currently curating a list of places where there are woking cats 🐈‍⬛ (e.g Bodega cats). 
                     </p>
 
-                </div>
-                <button class="collapsible">👾 Technical Skills</button>
+                </div> -->
+                <!-- <button class="collapsible">👾 Technical Skills</button>
                     <div class="content">
                         <br>
                             <p> <strong>Programming Languages: </strong>Java, Python, C/C++, JavaScript, HTML5/CSS, SQL, MatLab, R, SPSS <br>
                                 <strong>Libraries/Frameworks:</strong> Numpy, Matplotlib, ggplot2, Flask, Node.js, jQuery, TensorFlow, OpenCV <br>
                                 <strong>Databases:</strong> PostgreSQL, MySQL, NoSQL, Neo4j<br>
                                 <strong>Other Tools:</strong> Git/Github, Unix/Linux, Google Cloud Platforms (GCP), Embedded Systems (Raspberry Pis & Arduino), Docker, Figma, LaTex</p>
-                    </div>
+                    </div> -->
 
-               
                
                
                 
@@ -233,7 +306,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-xl-7">
                         <p>Feel free to contact me! </p>
-                        <p class="mb-4" align = "center" style = "font-family: MaisonMono;" >e-mail : <a href = "mailto:ew2709@barnard.edu">ew2709@barnard.edu</a> | <a href ="https://github.com/elvinawibisono">Github</a> | <a href="https://www.linkedin.com/in/elvina-wibisono/">LinkedIn</a> </p>
+                        <p class="mb-4" align = "center" style = "font-family: MaisonMono;" >e-mail : <a href = "mailto:elvinawibisono09@gmail.com">elvinawibisono09@gmail.com</a> | <a href ="https://github.com/elvinawibisono">Github</a> | <a href="https://www.linkedin.com/in/elvina-wibisono/">LinkedIn</a> </p>
                         
 
 
@@ -482,10 +555,11 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
         <script src="js/collapsible.js"></script>
+        <script src="js/dialogue.js"></script>
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
     </body>
 </html>
